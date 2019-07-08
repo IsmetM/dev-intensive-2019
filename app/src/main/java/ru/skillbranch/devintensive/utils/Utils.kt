@@ -14,4 +14,13 @@ fun parseFullName(fullName: String?): Pair<String?, String?>{
     return firstName to lastName
 }
 
+    fun transliteration(payload: String, divider:String = " "): String {
+        TODO("Create method")
+    }
+
+    fun toInitials(firstName: String?, lastName: String?): String? {
+        TODO("Create method")
+    }
+
+
 }
