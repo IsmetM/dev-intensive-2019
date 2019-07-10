@@ -7,11 +7,8 @@ import java.util.*
 const val SECOND = 1000L
 const val MINUTE = 60* SECOND
 const val HOUR = 60* MINUTE
-const val DAY = 60* HOUR
-//const val WEEK = 7* DAY
-//const val MONTH = 4* WEEK
-//const val YEAR = 12* MONTH
-//const val SENTURY = 100* YEAR
+const val DAY = 24* HOUR
+
 const val DATE_FORMAT = "HH:mm:ss dd.MM.yy"
 
 fun Date.format(pattern: String = DATE_FORMAT): String {
