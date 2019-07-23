@@ -31,7 +31,7 @@ data class User(
         var avatar: String? = null,
         var rating: Int = 0,
         var respect: Int = 0,
-        var lastVisit: Date? = null,
+        var lastVisit: Date? = Date(),
         var isOnline: Boolean = false
     ) {
         fun id(id: String) = apply { this.id = id }
@@ -55,9 +55,3 @@ data class User(
         }
     }
 }
-//    init {
-//        println(
-//            "It's Alive!!! \n " +
-//                    "${if (lastName === "Doe") "His name is $firstName $lastName" else "And his name $firstName $lastName !!!"} \n "
-//        )
-//    }
