@@ -70,11 +70,13 @@ class Bender(var status:Status = Status.NORMAL, var question: Question = Questio
             override fun nextQuestion() = values()[ordinal + 1]
             override fun validation(answer: String?): Pair<Boolean, String> = (answer?.all { it.isLetter() } ?: false) to "Материал не должен содержать цифр"
         },
-        BDAY("Когда меня создали?", listOf("2993")) {
+//    TEST    BDAY("Когда меня создали?", listOf("2993")) {
+        BDAY("Когда меня создали?", listOf("2")) {
             override fun nextQuestion() = values()[ordinal + 1]
             override fun validation(answer: String?): Pair<Boolean, String> = (answer?.all { it.isDigit() } ?: false) to "Год моего рождения должен содержать только цифры"
         },
-        SERIAL("Мой серийный номер?", listOf("2716057")) {
+//     TEST   SERIAL("Мой серийный номер?", listOf("2716057")) {
+        SERIAL("Мой серийный номер?", listOf("2")) {
             override fun nextQuestion() = values()[ordinal + 1]
             override fun validation(answer: String?): Pair<Boolean, String> = (answer?.length == 7 && answer.all { it.isDigit() }) to "Серийный номер содержит только цифры, и их 7"
         },
