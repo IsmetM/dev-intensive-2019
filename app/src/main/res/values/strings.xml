@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Chat Dev-intensive</string>
-    <string name="et_input_answer_hint">Введите</string>
+    <string name="et_input_answer_hint">Введите ответ</string>
 </resources>
